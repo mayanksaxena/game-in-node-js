@@ -8,7 +8,7 @@ function makeid(len) {
     return text;
 }
 
-var domainURL = "http://mayanksaxena.aws.af.cm";//"http://localhost:8888";//"http://arcane-thicket-2267.herokuapp.com";//;
+var domainURL = "http://localhost:8888";
 
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
