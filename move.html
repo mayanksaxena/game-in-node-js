@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<script src="webroot/js/jquery.js"></script> <!– jquery –>
+		<script src="socket.io/lib/socket.io.js"></script> <!– sockets –>
+		<script src="webroot/js/game_client.js"></script>
+		<link rel="stylesheet" type="text/css" href="webroot/css/style.css">
+	</head>
+	<body id="mybody" style="height:800px;width:800px;">
+		<!-- Game Init Area Before Load Game / Generate a new Game -->
+		<div id="game_init_area">
+			<a id="start_a_new_game"><img src="/webroot/images/start.png" /></a>
+			<div id="game_links_area"></div>
+			<label>*Note: You can share the game link with one person only its a two player game.</label>
+		</div>
+		<!-- Game Area Play game here -->
+		<div id="game_area">
+			<label>*Note: Please Dont refresh the page if you are drawing an object.</label><br>
+			<button id="takeControl">Start</button>
+			<button id="quit">Quit</button>
+			<p id='error'>
+				Game is already Running.......
+				<input type"text" id="guess" /><button id="guessSubmit">guess</button>
+			</p>
+			<p id="challengeTask"></p>
+			<p id="timeRemain"></p>
+			<!-- <div id="movingbox" style="background:red;width:100px;height:100px;position:absolute;top:0px;left:150px;"></div>
+			 -->
+			 <a id="eraser"><img src="/webroot/images/rubber.jpg" height="50" title="Rubber/Eraser" width="50"/></a>
+			 <a id="draw"><img src="/webroot/images/pencil.jpg" height="50" title="Pencil" width="50"/></a>
+			 <a id="eraseAll"><img src="/webroot/images/eraseall.jpg" height="50" title="Erase All" width="50"/></a>
+			 
+			 <div id="drawobject" style="cursor: crosshair; height: 400px; width: 500px; border: 1px solid;">
+			</div>
+			<div id="loader">
+				 <h2>Please Wait Game is loading...</h2>
+				 <img src="/webroot/images/loader.gif" height="50" width="50">
+			</div>
+			<div class="chat">
+				<div style="float:left;width:50px;border-right:1px solid black;height:200px;padding:10px;overflow:scroll-y;">
+					<b>Chat</b>
+					<div id="rooms"></div>
+				</div>
+				<div style="float:left;width:300px;height:250px;overflow:scroll-y;padding:10px;">
+					<div id="conversation"></div>
+					<input id="data" style="width:200px;" />
+					<input type="button" id="datasend" value="send" />
+				</div>
+				<div id="countUsers"></div>
+				<div class="desciption">
+					<h3>Description:</h3>
+					This is a simple two player game. In which first person will draw an image in the given space according to object shown / decided on his screen. Another person can see the same drawing on his screen he needs to guess the object name in 40 seconds and if his answer will correct then he will get a congrats message on his screen 
+				</div>
+			</div>
+		</div>
+		<div class="overlay hide"></div>
+	</body>
+</html>

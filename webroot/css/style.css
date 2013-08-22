@@ -1,0 +1,108 @@
+.desciption {
+	background: none repeat scroll 0 0 #CCCCCC;
+    float: right;
+    height: 200px;
+    overflow: scroll;
+    position: relative;
+    width: 300px;
+}
+.highlight {
+	background: none repeat scroll 0 0 #CCCCCC;
+	color: blue;
+	font-size: 20px;
+	font-weight: bold;
+	width: 200px;
+}
+.winner {
+	background: none repeat scroll 0 0 #CCCCCC;
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+	width: 200px;
+}
+.chat {
+	position: absolute;
+    left: 850px;
+    top: 0;
+}
+#game_area {
+	display: none;
+}
+#conversation {
+	background: none repeat scroll 0 0 #CCCCCC;
+    border: 1px solid;
+    height: 200px;
+    overflow-y: scroll;
+    width: auto;
+}
+
+#draw.active img, #eraser.active img, #eraseAll.active img {
+	border: 1px solid;
+}
+#countUsers {
+ 	color: red;
+    font-weight: bold;
+    left: 85px;
+}
+.overlay {
+	background: none repeat scroll 0 0 #000000;
+    height: 100%;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.overlay.hide {
+	display: none;
+}
+#loader {
+	position: absolute; 
+	top: 0px;
+	left: 30%; 
+	display:none;
+	z-index: 99999;
+}
+#loader h2 {
+	color: #fff;
+}
+#loader img {
+	left: 42%;
+    position: relative;
+}
+#game_init_area {
+	left: 60%;
+    position: relative;
+    top: 25%;
+}
+
+#game_init_area label {
+	font-weight: bold;
+    left: -18%;
+    position: relative;
+}
+
+#game_links_area {
+	height: 40px;
+    left: -5%;
+    padding-top: 10px;
+    position: relative;
+}
+#game_links_area a {
+	color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+#drawobject {
+	background: none repeat scroll 0 0 #CEF6F5;
+    border: 1px solid;
+    border-radius: 5px 5px 5px 5px;
+    cursor: crosshair;
+    height: 400px;
+    left: 36%;
+    width: 500px;
+}
+#game-area label {
+	font-size: 12px;
+    font-weight: bold;
+}
+body {cursor:url("/webroot/images/pencil.jpg");}
