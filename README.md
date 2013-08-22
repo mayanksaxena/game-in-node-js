@@ -1,4 +1,4 @@
-game-in-node-js
+Game in node
 ===============
 
 Description 
